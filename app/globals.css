@@ -26,3 +26,26 @@ html.lenis, html.lenis body {
 .lenis.lenis-smooth iframe {
   pointer-events: none;
 }
+@layer base {
+
+  /* *{
+    border: 1px solid red;
+  } */
+
+  
+  ::-moz-selection {
+    background: #D1D1C7
+  }
+  ::-webkit-selection {
+    background: #D1D1C7
+  }
+  ::selection {
+    background: #D1D1C7
+  }
+
+  .text-smooth {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
