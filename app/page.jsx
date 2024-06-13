@@ -27,14 +27,18 @@ export default function Home() {
 
     requestAnimationFrame(raf);
 
+    setTimeout( () => {
+      setIsLoading(false);
+    }, 2000)
+
   }, []); 
 
 
   return (
     <main>
-      {/* <AnimatePresence mode="wait">
+      <AnimatePresence mode="wait">
         {isLoading && <Index />}
-      </AnimatePresence> */}
+      </AnimatePresence>
       <Header />
       <section className="flex flex-col items-center gap-4">
         <div className="w-52 h-52 bg-red-400 rounded-full"></div>
