@@ -1,0 +1,111 @@
+
+
+.header {
+//   position: absolute;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  top: 0;
+  color: "#0C0E0D";
+  padding: 6.8rem 6rem;
+  width: 100%;
+  font-weight: 300;
+  box-sizing: border-box;
+  align-items: center;
+
+
+  .logo {
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    font-size: 24px;
+    font-weight: bolder;
+    opacity: 0.5;
+    p {
+        margin: 0px;
+        transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+    }
+    .name {
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        white-space: nowrap;
+        // margin-left: 5px;
+        transition: all 0.5s cubic-bezier(0.78, 0.04, 0.43, 0.94);
+        
+
+        p {
+            position: relative;
+            transition: transform 0.5s cubic-bezier(0.78, 0.04, 0.43, 0.94);
+            &:nth-of-type(2){
+                padding-left: 0.3em;
+                // position: absolute;
+                // left: 50px;
+            }
+            &:nth-of-type(3){
+                padding-left: 0.3em;
+                position: absolute;
+                left: 123px;
+            }
+        }
+    }
+    &:hover {
+        .year {
+            transform: translateX(28px);
+        }
+        .name{
+            // padding-right: 30px;
+            .nolan{
+                transform: translateX(-120px);
+            }
+            .ngim{
+                transform: translateX(-96px);
+            }
+            .bug{
+                transform: translateX(-96px);
+            }
+        }
+    }
+  }
+
+
+  .nav {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: normal;
+
+    .anch{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 1;
+        padding: 20px;
+        // align-items: center;
+        cursor: pointer;
+        &:hover {
+            .indicator {
+                transform: scale(1.5);
+            }
+        }
+
+        .indicator {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            top: 65px;
+            left: 50%;
+            background-color: "#FFD700";
+            
+            background-color: black;
+            border-radius: 50%;
+            transform: scale(0) translate(-50%);
+            transition: transform 0.2s cubic-bezier(0.78, 0.04, 0.43, 0.94);
+        }
+    }
+
+    a {
+      cursor: pointer;
+    }
+  }
+}

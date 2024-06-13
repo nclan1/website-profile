@@ -4,8 +4,15 @@
 
 body {
   margin: 0px;
-  overflow: hidden;
+  overflow: hidden;  
+  background-color: white;
+  background-image: url("../assets/images/Noise.png");
+  background-size: cover; /* Cover the entire page */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-attachment: fixed; /* Keep the image fixed during scroll */
 }
+
 
 html.lenis, html.lenis body {
   height: auto;
@@ -48,4 +55,13 @@ html.lenis, html.lenis body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
+  /* @font-face {
+    font-family: "GeneralSans-Variable";
+    src: url("../assets/fonts/GeneralSans-Variable.ttf") format("truetype");
+    font-weight: 200 700;
+    font-display: swap;
+    font-style: normal;
+  } */
+
 }
