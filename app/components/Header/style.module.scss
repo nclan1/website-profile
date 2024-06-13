@@ -7,7 +7,7 @@
   z-index: 1;
   top: 0;
   color: "#0C0E0D";
-  padding: 6.8rem 6rem;
+  padding: 6.5rem 6rem;
   width: 100%;
   font-weight: 300;
   box-sizing: border-box;
@@ -108,4 +108,61 @@
       cursor: pointer;
     }
   }
+}
+
+.headerButtonContainer {
+    transform: scale(0);
+    position: fixed;
+    right: 10px;
+    top: 5px;
+    z-index: 4;
+
+    .button{
+        position: relative;
+        margin: 20px;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: aquamarine;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .burger {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        &::after, &::before{
+            content: "";
+            display: block;
+            height: 1px;
+            width: 40%;
+            margin: auto;
+            background-color: black;
+            position: relative;
+            transition: transform 0.3s;
+        }
+
+        &::after{
+            top: -5px;
+        }
+
+        &::before{
+            top: 5px;
+        }
+    }
+
+    .burgerActive {
+        &::after{
+            transform: rotate(45deg);
+            top: -1px;
+        }
+
+        &::before{
+            transform: rotate(-45deg);
+            top: 0px;
+        }
+    }
 }
