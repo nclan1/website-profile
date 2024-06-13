@@ -1,3 +1,13 @@
+'use client';
+
+import { useEffect, useState, useLayoutEffect, useRef} from "react";
+import { usePathname } from "next/navigation";
+import { AnimatePresence } from "framer-motion";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+
+
 import styles from './style.module.scss'
 
 
@@ -6,7 +16,6 @@ export default function Header() {
 
         <>
         <div className={styles.header}>
-
 
             <div className={styles.logo}>
                 <div className={styles.name}>
@@ -37,9 +46,8 @@ export default function Header() {
                 </div>
             </div>
 
-
-
         </div>
+
         </>
         // <div className="flex justify-between p-16">
 
