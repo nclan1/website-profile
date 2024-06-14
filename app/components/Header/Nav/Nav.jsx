@@ -32,18 +32,19 @@ export default function index() {
 
     return (
         <motion.div
-            className={styles.menu}
             variants={menuSlide}
-            initial="initial"
             animate="enter"
             exit="exit"
+            initial="initial"
+            className={styles.menu}
             >
             <div className={styles.body}>
                 <div onMouseLeave={() => {setSelectedIndicator(pathname)}} className={styles.nav}>
                     <div className={styles.header}>
-                        <p>Navigation</p>
+                        <p>looking for something?</p>
                     </div>
-                    {
+                    <div>
+                        {
                         navItems.map( (data, index) => {
                             return <Linki
                             key={index}
@@ -53,6 +54,8 @@ export default function index() {
                             </Linki>
                         })
                     }
+                    </div>
+                    
                 </div>
                 <div className={styles.footer}>
                     <a>linkedin</a>

@@ -3,6 +3,7 @@
     position: relative;
     display: flex;
     align-items: center;
+    // font-weight:900;
 
     .indicator{
         width: 10px;
@@ -10,6 +11,7 @@
         background-color: white;
         border-radius: 50%;
         position: absolute;
-        left: -30px;
+        left: -25px;
+        margin-top: 16px;
     }
 }

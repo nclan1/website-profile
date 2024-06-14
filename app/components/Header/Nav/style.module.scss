@@ -1,11 +1,13 @@
 
 .menu {
     height: 100vh;
-    background-color: pink;
+    background-color: #1E1E20;
     position: fixed;
     right: 0;
     top: 0;
-    color: yellow;
+    color: white;
+    // display: flex;
+    // align-items: center;
 
     .body {
         box-sizing: border-box;
@@ -18,21 +20,23 @@
         .nav{
             display: flex;
             flex-direction: column;
-            font-size: 56px;
-            gap: 12px;
+            font-size: 64px;
+            // font-weight:900;
+            gap: 10px;
             margin-top: 80px;
 
             .header {
-                color: blue;
-                border-bottom: 1px solid yellow;
-                font-size: 11px;
-                margin-top: 40px;
+                color: #ABA9A9;
+                border-bottom: 1px solid white;
+                font-size: 1rem;
+                // font-weight: 300;
+                // margin-top: 20px;
             }
 
             a{
                 text-decoration: none;
                 color: white;
-                font-weight: 300;
+                font-weight:600;
             }
         }
     }
