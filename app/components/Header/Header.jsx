@@ -6,6 +6,7 @@ import { AnimatePresence } from "framer-motion";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Rounded from "@/object/RoundedButton";
+import Nav from "./Nav/Nav";
 // import Magnetic from "./object/Magnetic";
 
 
