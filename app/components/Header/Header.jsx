@@ -77,6 +77,8 @@ export default function Header() {
         </div>
 
         <div ref={button} className={styles.headerButtonContainer}>
+
+            {/* if isActive, then show the side bar */}
             <Rounded onClick={() => {setIsActive(!isActive)}} className={styles.button}>
                 <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}></div>
             </Rounded>
