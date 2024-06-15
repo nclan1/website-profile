@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { usePathname } from 'next/navigation';
 import { menuSlide } from '../anim';
 import Linki from '../Link/Link';
+import Curve from '../Curve/Curve';
 
 const navItems = [
     {
@@ -39,9 +40,11 @@ export default function index() {
             className={styles.menu}
             >
             <div className={styles.body}>
+                
                 <div onMouseLeave={() => {setSelectedIndicator(pathname)}} className={styles.nav}>
                     <div className={styles.header}>
                         <p>looking for something?</p>
+                        <hr className="h-px mt-5 mb-10 bg-gray-200 border-0 dark:bg-gray-700"/>
                     </div>
                     <div>
                         {
@@ -55,14 +58,19 @@ export default function index() {
                         })
                     }
                     </div>
-                    
                 </div>
-                <div className={styles.footer}>
-                    <a>linkedin</a>
-                    <a>instagram</a>
-                    <a>medium</a>
+
+                <div className={styles.contact}>
+                    ngimcnolan@gmail.com
+            
+                    <div className={styles.footer}>
+                        <a>linkedin</a>
+                        <a>instagram</a>
+                        <a>medium</a>
+                    </div>
                 </div>
             </div>
+            <Curve />
 
         </motion.div>
     )

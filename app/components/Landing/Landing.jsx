@@ -5,7 +5,7 @@ import gsap from 'gsap';
 import { AnimatePresence } from "framer-motion";
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import Image from 'next/image'; 
-import profilePic from './Profile.jpg';  
+// import profilePic from './Profile.jpg';  
 
 
 export default function Header() {
@@ -58,11 +58,7 @@ export default function Header() {
                     <p ref={secondText} className={styles.text}>nolan ngim - nolan ngim -</p>
                 </div>
             </div>
-            {/* <Image 
-                className={styles.profilePic}
-                src={profilePic}
-                alt='nolan ngim'
-            /> */}
+        
         </main>
     )
 

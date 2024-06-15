@@ -1,9 +1,28 @@
 
 
-.profilePic {
-    height: 513px;
-    width: 417px;
-    object-fit: cover;
-    z-index: 3;
-    border-radius: 30px;
+
+.headline {
+    display: flex;
+
+
+    .school {
+        font-size: 6rem;
+        font-weight: 600;
+
+
+        a{
+            color: red;
+            text-decoration: underline;
+        }
+    }
+    
+    
+    .profilePic {
+        height: 513px;
+        width: 417px;
+        object-fit: cover;
+        z-index: 3;
+        border-radius: 30px;
+    }
 }
+

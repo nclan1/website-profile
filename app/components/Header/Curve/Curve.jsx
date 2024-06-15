@@ -25,7 +25,7 @@ export default function Curve() {
 
     return (
         <svg className={styles.svgCurve}>
-            <path d={initialPath}></path>
+            <motion.path variants={curve} initial="initial" animate="enter" exit="exit"></motion.path>
         </svg>
     )
 }
