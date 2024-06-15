@@ -45,7 +45,7 @@ export default function Header() {
                 end: window.innerHeight,
                 onUpdate: e => direction = e.direction * -1
             },
-            x: "-500px",
+            x: "-200px",
         })
         requestAnimationFrame(animate);
     },[])

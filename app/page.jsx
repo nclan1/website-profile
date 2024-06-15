@@ -15,6 +15,8 @@ export default function Home() {
 
   useEffect(() => {
     const lenis = new Lenis({
+      lerp: 0.2,
+      wheelMultiplier: 0.6,
     });
 
     const onScroll = (e) => {
@@ -48,6 +50,7 @@ export default function Home() {
       <Landing />
       <div className='h-1 w-full bg-black mt-48 opacity-20'></div>
       <Profile />
+      
       {/* <Nav /> */}
 
       <section className="flex flex-col items-center gap-4">
