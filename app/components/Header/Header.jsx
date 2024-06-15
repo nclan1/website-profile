@@ -7,6 +7,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Rounded from "@/object/RoundedButton";
 import Nav from "./Nav/Nav";
+import MagneticWrapper from "@/object/Magnetic/MagneticWrapper";
 // import Magnetic from "./object/Magnetic";
 
 
@@ -44,18 +45,23 @@ export default function Header() {
         <>
         <div className={styles.header}>
 
-            <div className={styles.logo}>
-                <div className={styles.name}>
-                    <p className={styles.nolan}>nolan</p>
-                    <p className={styles.ngim}>ngim</p>
-                    <p className={styles.bug}> buggin'</p>
+            <MagneticWrapper>
+                <div className={styles.logo}>
+                    <div className={styles.name}>
+                        <p className={styles.nolan}>nolan</p>
+                        <p className={styles.ngim}>ngim</p>
+                        <p className={styles.bug}> buggin'</p>
+                    </div>
+                    <p className={styles.year}>© 2024</p>
                 </div>
-                <p className={styles.year}>© 2024</p>
-            </div>
+            </MagneticWrapper>
+
+            
 
             <div className={styles.nav}>
                 <div className={styles.anch}>
                     <a>about</a>
+                    {/* <a className={styles.about}>about</a> */}
                     <div className={styles.indicator}></div>
                   
                 </div>

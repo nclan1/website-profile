@@ -81,11 +81,21 @@
         position: relative;
         z-index: 1;
         padding: 20px;
+
+        a {
+            transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+        }
+        
+
         // align-items: center;
         cursor: pointer;
         &:hover {
             .indicator {
                 transform: scale(1.5);
+            }
+
+            .about {
+                transform: translateY(-10px);
             }
         }
 
