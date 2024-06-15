@@ -8,11 +8,20 @@
     .school {
         font-size: 6rem;
         font-weight: 600;
+        color: #1E1E20;
+        display: flex;
+        flex-direction: column;
 
 
         a{
-            color: red;
+            color: #FF5A5A;
             text-decoration: underline;
+        }
+        h2 {
+            color: #0C0E0D;
+            font-size: 20px;
+            opacity: 0.56;
+            font-weight: 600;
         }
     }
     

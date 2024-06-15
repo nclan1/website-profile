@@ -13,7 +13,10 @@ export default function Profile(){
             alt='nolan ngim'
             />
 
-            <h1 className={styles.school}>boston <a>uni</a></h1>
+            <div className={styles.school}>
+                <h1>boston <a>uni</a></h1>
+                <h2>42°21’28’’N, 71°03’42”O</h2>
+            </div>
         </div>
         
     )
