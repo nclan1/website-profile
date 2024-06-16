@@ -8,8 +8,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Rounded from "@/object/RoundedButton";
 import Nav from "./Nav/Nav";
 import MagneticWrapper from "@/object/Magnetic/MagneticWrapper";
-// import Magnetic from "./object/Magnetic";
-
 
 
 import styles from './style.module.scss'
@@ -59,12 +57,14 @@ export default function Header() {
             
 
             <div className={styles.nav}>
-                <div className={styles.anch}>
-                    <a>about</a>
-                    {/* <a className={styles.about}>about</a> */}
-                    <div className={styles.indicator}></div>
-                  
-                </div>
+                <MagneticWrapper>
+                     <div className={styles.anch}>
+                        <a>about</a>
+                        {/* <a className={styles.about}>about</a> */}
+                        <div className={styles.indicator}></div>
+                    </div>
+                </MagneticWrapper>
+               
                 <div className={styles.anch}>
                     <a>work</a>
                     <div className={styles.indicator}></div>
@@ -85,9 +85,15 @@ export default function Header() {
         <div ref={button} className={styles.headerButtonContainer}>
 
             {/* if isActive, then show the side bar */}
-            <Rounded onClick={() => {setIsActive(!isActive)}} className={styles.button}>
-                <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}></div>
-            </Rounded>
+            <MagneticWrapper>
+                <div>
+                    <Rounded onClick={() => {setIsActive(!isActive)}} className={styles.button}>
+                        <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}></div>
+                    </Rounded>
+                </div>
+             
+            </MagneticWrapper>
+
         </div>
         <AnimatePresence mode="wait">
                 {isActive && <Nav />}
