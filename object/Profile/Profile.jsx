@@ -21,11 +21,14 @@ export default function Profile(){
     return (
         <div className={styles.headline} ref={container}>
             <motion.h1 style={{y: lg}}>
-                <Image 
-                className={styles.profilePic}
-                src={profilePic}
-                alt='nolan ngim'
-                />
+                <div className={styles.profileContainer}>
+                     <Image 
+                        className={styles.profilePic}
+                        src={profilePic}
+                        alt='nolan ngim'
+                        />
+                </div>
+               
             </motion.h1>
             
 
