@@ -21,6 +21,7 @@
 .sliderContainer{
     position: absolute;
     // top: calc(100vh);
+    z-index: 0;
 }
 
 .slider{

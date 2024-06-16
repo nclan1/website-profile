@@ -54,8 +54,8 @@ export default function Header() {
         <main className={styles.main}>
             <div className={styles.sliderContainer}>
                 <div ref={slider} className={styles.slider}>
-                    <p ref={firstText} className={styles.text}>nolan ngim - nolan ngim -</p>
-                    <p ref={secondText} className={styles.text}>nolan ngim - nolan ngim -</p>
+                    <p ref={firstText} className={styles.text}>NOLAN NGIM - NOLAN NGIM -</p>
+                    <p ref={secondText} className={styles.text}>NOLAN NGIM - NOLAN NGIM -</p>
                 </div>
             </div>
         
