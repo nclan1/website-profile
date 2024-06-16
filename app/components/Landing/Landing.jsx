@@ -52,12 +52,18 @@ export default function Header() {
 
     return (
         <main className={styles.main}>
-            <div className={styles.sliderContainer}>
-                <div ref={slider} className={styles.slider}>
-                    <p ref={firstText} className={styles.text}>NOLAN NGIM - NOLAN NGIM -</p>
-                    <p ref={secondText} className={styles.text}>NOLAN NGIM - NOLAN NGIM -</p>
+            <div className={styles.line}></div>
+
+            <div className={styles.cont}>
+                <div className={styles.sliderContainer}>
+                    <div ref={slider} className={styles.slider}>
+                        <p ref={firstText} className={styles.text}>NOLAN NGIM - NOLAN NGIM -</p>
+                        <p ref={secondText} className={styles.text}>NOLAN NGIM - NOLAN NGIM -</p>
+                    </div>
                 </div>
             </div>
+
+            <div className={styles.line}></div>
         
         </main>
     )

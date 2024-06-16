@@ -47,9 +47,9 @@ export default function Home() {
       </AnimatePresence>
       <Header />
 
-      <div className='h-1 w-full bg-black opacity-20'></div>
+      {/* <div className='h-1 w-full bg-black opacity-20'></div> */}
       <Landing />
-      <div className='h-1 w-full bg-black mt-48 opacity-20'></div>
+      {/* <div className='h-1 w-full bg-black mt-48 opacity-20'></div> */}
       <Profile />
       
       {/* <Nav /> */}
