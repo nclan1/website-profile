@@ -6,6 +6,7 @@
     flex-direction: column;
     justify-content: space-between;
     top: -4rem;
+    overflow: hidden;
     // height: 100vh;
     // margin-bottom: 100vh;
     // .profilePic {
@@ -26,6 +27,18 @@
     justify-content: center;
     align-items: center;
     height: 22vh;
+    animation: all 2s cubic-bezier(0.76, 0, 0.24, 1);
+    overflow: hidden;
+    animation-delay: 2.6s;
+
+    @keyframes all {
+        from {
+            transform: translateY(100%);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
 }
 
 .line {
