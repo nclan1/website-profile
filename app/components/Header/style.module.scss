@@ -12,6 +12,19 @@
   font-weight: 300;
   box-sizing: border-box;
   align-items: center;
+  animation: all 2s cubic-bezier(0.76, 0, 0.24, 1);
+  animation-delay: 2.7s;
+
+  @keyframes all {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
 
 
   .logo {
