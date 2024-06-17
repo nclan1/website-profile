@@ -3,12 +3,12 @@ import { useEffect, useState } from "react";
 import Lenis from "lenis";
 import { AnimatePresence } from "framer-motion";
 import Index from "./components/Preloader";
-import Image from "next/image";
 import Header from "./components/Header/Header";
 import Landing from "./components/Landing/Landing";
 import Profile from "@/object/Profile/Profile";
-import Nav from "./components/Header/Nav/Nav";
 import MagneticWrapper from "@/object/Magnetic/MagneticWrapper";
+import About from "./components/About/About";
+
 
 export default function Home() {
 
@@ -51,8 +51,7 @@ export default function Home() {
       <Landing />
       {/* <div className='h-1 w-full bg-black mt-48 opacity-20'></div> */}
       <Profile />
-      
-      {/* <Nav /> */}
+      <About />
 
       <section className="flex flex-col items-center gap-4">
       <MagneticWrapper>
