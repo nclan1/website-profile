@@ -1,7 +1,7 @@
 
 import styles from './style.module.scss';
-import { motion, useInView } from 'framer-motion';
-import { slideUp, opacity } from './anim';
+import { motion, useInView, useScroll, useTransform } from 'framer-motion';
+import { slideUp, opacity, slideUpBezier } from './anim';
 import { useRef } from 'react';
 
 
@@ -16,11 +16,25 @@ export default function About() {
     const isInView = useInView(container);
     const isInView2 = useInView(container2);
 
+    const cont = useRef(null);
+    const {scrollYProgress} = useScroll({
+        target: cont,
+        offset: ['start end', 'end start']
+    })
+
+    const sm = useTransform(scrollYProgress, [0, 1], [0, -50]);
+    const md = useTransform(scrollYProgress, [0, 1], [0, 150]);
+    const lg = useTransform(scrollYProgress, [0, 1], [0, -250]);
+
     return (
         <div className={styles.container}>
             
-            <div className={styles.title}>
-                <div className={styles.line}></div>
+            <div className={styles.title} ref={cont}>
+                <motion.h1 style={{y: md}}>
+                    <div className={styles.line}></div>
+                </motion.h1>
+                
+                {/* <motion.h1 variants={slideUpBezier} initial="initial" animate={isInView ? "open" : "closed"}>who?</motion.h1> */}
                 <h1>who?</h1>
             </div>
 
@@ -50,7 +64,10 @@ export default function About() {
                 </p>
 
                 <p ref={container2}>
-                    find more about me:
+                    <motion.span variants={opacity} initial="initial" animate={isInView2 ? "open" : "closed"}>
+                        find more about me:
+                    </motion.span>
+                
                 </p>
             </div>
 
