@@ -5,7 +5,6 @@ import { usePathname } from "next/navigation";
 import { AnimatePresence } from "framer-motion";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Rounded from "@/object/RoundedButton";
 import Nav from "./Nav/Nav";
 import MagneticWrapper from "@/object/Magnetic/MagneticWrapper";
 
@@ -88,9 +87,9 @@ export default function Header() {
             {/* if isActive, then show the side bar */}
             <MagneticWrapper>
                 <div>
-                    <Rounded onClick={() => {setIsActive(!isActive)}} className={styles.button}>
+                    <div onClick={() => {setIsActive(!isActive)}} className={styles.button}>
                         <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}></div>
-                    </Rounded>
+                    </div>
                 </div>
              
             </MagneticWrapper>

@@ -1,8 +1,9 @@
 
 import styles from './style.module.scss';
-import { motion, useInView, useScroll, useTransform } from 'framer-motion';
+import { motion, useInView, useScroll, useTransform, useSpring } from 'framer-motion';
 import { slideUp, opacity, slideUpBezier } from './anim';
 import { useRef } from 'react';
+import Rounded from '@/object/RoundedButton/Rounded';
 
 
 
@@ -22,16 +23,23 @@ export default function About() {
         offset: ['start end', 'end start']
     })
 
+   
+
+
+    const lineWidth = useTransform(scrollYProgress, [0, 1], [300, 600])
+
     const sm = useTransform(scrollYProgress, [0, 1], [0, -50]);
-    const md = useTransform(scrollYProgress, [0, 1], [0, 150]);
+    const md = useTransform(scrollYProgress, [0, 1], [0, 210]);
     const lg = useTransform(scrollYProgress, [0, 1], [0, -250]);
+
+    const translateX = useTransform(scrollYProgress, [0, 1], [-100, -250]);
 
     return (
         <div className={styles.container}>
             
             <div className={styles.title} ref={cont}>
                 <motion.h1 style={{y: md}}>
-                    <div className={styles.line}></div>
+                    <motion.div className={styles.line} style={{ width: lineWidth}}></motion.div>
                 </motion.h1>
                 
                 {/* <motion.h1 variants={slideUpBezier} initial="initial" animate={isInView ? "open" : "closed"}>who?</motion.h1> */}
@@ -69,6 +77,13 @@ export default function About() {
                     </motion.span>
                 
                 </p>
+            </div>
+
+            <div className={styles.moreAbout}>
+                {/* <motion.div className={styles.circle} style={{x: translateX}}></motion.div> */}
+                <Rounded className={styles.circle}>
+                    <p>helloe</p>
+                </Rounded>
             </div>
 
         </div>

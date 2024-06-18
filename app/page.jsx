@@ -42,9 +42,9 @@ export default function Home() {
 
   return (
     <main>
-      <AnimatePresence mode="wait">
+      {/* <AnimatePresence mode="wait">
         {isLoading && <Index />}
-      </AnimatePresence>
+      </AnimatePresence> */}
       <Header />
 
       {/* <div className='h-1 w-full bg-black opacity-20'></div> */}

@@ -40,10 +40,11 @@ export default function Profile(){
 
             <motion.h1 style={{y: md}}>
                 <div className={styles.school}>
-                    <h1>boston <a>uni</a></h1>
+                    <motion.h1 variants={ slideUp } initial ='initial' animate="open">boston <a>uni</a></motion.h1>
                     <h2>42°21’28’’N, 71°03’42”O</h2>
                 </div>
             </motion.h1>
+
             
         </div>
         
