@@ -16,7 +16,7 @@
         flex-direction: row;
 
         .line {
-            margin-top: -21vh;
+            // margin-top: -21vh;
             width: 300px;
             background-color: black;
             height: 3px;
@@ -69,16 +69,23 @@
     .moreAbout {
         display: flex;
         justify-content: center;
+        padding-bottom: 300px;
         
         .circle {
-            margin-top: -10vh;
-            width: 23vh;
-            height: 23vh;
-            background-color: pink;
+            // margin-top: -10vh;
+            width: 180px;
+            height: 180px;
+            background-color: #524B4A;
             border-radius: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
+            cursor: pointer;
+            position: absolute;
+            p {
+                z-index: 1;
+                color: white;
+            }
         }
     }
 }

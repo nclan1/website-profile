@@ -38,10 +38,9 @@ export default function About() {
         <div className={styles.container}>
             
             <div className={styles.title} ref={cont}>
-                <motion.h1 style={{y: md}}>
-                    <motion.div className={styles.line} style={{ width: lineWidth}}></motion.div>
-                </motion.h1>
-                
+               
+                <motion.div className={styles.line} style={{ width: lineWidth}}></motion.div>
+            
                 {/* <motion.h1 variants={slideUpBezier} initial="initial" animate={isInView ? "open" : "closed"}>who?</motion.h1> */}
                 <h1>who?</h1>
             </div>
