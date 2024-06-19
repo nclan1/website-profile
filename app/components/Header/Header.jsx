@@ -7,6 +7,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Nav from "./Nav/Nav";
 import MagneticWrapper from "@/object/Magnetic/MagneticWrapper";
+import Rounded from "@/object/RoundedButton/Rounded";
 
 
 import styles from './style.module.scss'
@@ -87,11 +88,10 @@ export default function Header() {
             {/* if isActive, then show the side bar */}
             <MagneticWrapper>
                 <div>
-                    <div onClick={() => {setIsActive(!isActive)}} className={styles.button}>
+                    <Rounded onClick={() => {setIsActive(!isActive)}} className={styles.button}>
                         <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}></div>
-                    </div>
+                    </Rounded>
                 </div>
-             
             </MagneticWrapper>
 
         </div>

@@ -39,6 +39,11 @@
                 text-decoration: none;
                 color: white;
                 font-weight:600;
+                transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+
+            }
+            a:hover {
+                color: #FF6969;
             }
         }
     }
