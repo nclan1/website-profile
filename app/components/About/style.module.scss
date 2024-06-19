@@ -72,7 +72,7 @@
         padding-bottom: 300px;
         
         .circle {
-            // margin-top: -10vh;
+            margin-top: -10vh;
             width: 180px;
             height: 180px;
             background-color: #524B4A;
@@ -84,6 +84,8 @@
             position: absolute;
             p {
                 z-index: 1;
+                font-weight: 300;
+                font-size: 2rem;
                 color: white;
             }
         }

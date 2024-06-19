@@ -4,6 +4,7 @@ import { motion, useInView, useScroll, useTransform, useSpring } from 'framer-mo
 import { slideUp, opacity, slideUpBezier } from './anim';
 import { useRef } from 'react';
 import Rounded from '@/object/RoundedButton/Rounded';
+import MagneticWrapper from '@/object/Magnetic/MagneticWrapper';
 
 
 
@@ -32,7 +33,7 @@ export default function About() {
     const md = useTransform(scrollYProgress, [0, 1], [0, 210]);
     const lg = useTransform(scrollYProgress, [0, 1], [0, -250]);
 
-    const translateX = useTransform(scrollYProgress, [0, 1], [-100, -250]);
+    const translateX = useTransform(scrollYProgress, [0, 1], [-100, -300]);
 
     return (
         <div className={styles.container}>
@@ -80,9 +81,15 @@ export default function About() {
 
             <div className={styles.moreAbout}>
                 {/* <motion.div className={styles.circle} style={{x: translateX}}></motion.div> */}
-                <Rounded className={styles.circle}>
-                    <p>helloe</p>
-                </Rounded>
+                <motion.div style={{x: translateX}}>
+                    <MagneticWrapper>
+                        <div className='relative'>
+                            <Rounded className={styles.circle}>
+                                <p>here!</p>
+                            </Rounded>
+                        </div>
+                    </MagneticWrapper>
+                </motion.div>
             </div>
 
         </div>
