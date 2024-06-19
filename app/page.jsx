@@ -8,6 +8,7 @@ import Landing from "./components/Landing/Landing";
 import Profile from "@/object/Profile/Profile";
 import MagneticWrapper from "@/object/Magnetic/MagneticWrapper";
 import About from "./components/About/About";
+import Projects from "./components/Projects/Projects";
 
 
 export default function Home() {
@@ -52,6 +53,7 @@ export default function Home() {
       {/* <div className='h-1 w-full bg-black mt-48 opacity-20'></div> */}
       <Profile />
       <About />
+      <Projects />
 
       <section className="flex flex-col items-center gap-4">
       <MagneticWrapper>

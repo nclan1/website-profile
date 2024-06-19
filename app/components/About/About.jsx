@@ -71,7 +71,7 @@ export default function About() {
                     }
                 </p>
 
-                <p ref={container2}>
+                <p className="opacity-50" ref={container2}>
                     <motion.span variants={opacity} initial="initial" animate={isInView2 ? "open" : "closed"}>
                         find more about me:
                     </motion.span>
