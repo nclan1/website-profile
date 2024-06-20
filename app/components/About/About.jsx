@@ -15,6 +15,7 @@ export default function About() {
 
     const container = useRef(null);
     const container2 = useRef(null);
+    const container3 = useRef(null);
     const isInView = useInView(container);
     const isInView2 = useInView(container2);
 
@@ -23,6 +24,11 @@ export default function About() {
         target: cont,
         offset: ['start end', 'end start']
     })
+
+    const {scrollYProgress: scrollYProgress1} = useScroll({
+        target: container3,
+        offset: ['start end', 'end start']
+    });
 
    
 
@@ -33,7 +39,7 @@ export default function About() {
     const md = useTransform(scrollYProgress, [0, 1], [0, 210]);
     const lg = useTransform(scrollYProgress, [0, 1], [0, -250]);
 
-    const translateX = useTransform(scrollYProgress, [0, 1], [-100, -300]);
+    const translateX = useTransform(scrollYProgress1, [0, 1], [0, -270]);
 
     return (
         <div className={styles.container}>
@@ -79,11 +85,11 @@ export default function About() {
                 </p>
             </div>
 
-            <div className={styles.moreAbout}>
+            <div className={styles.moreAbout} ref={container3}>
                 {/* <motion.div className={styles.circle} style={{x: translateX}}></motion.div> */}
-                <motion.div style={{x: translateX}}>
+                <motion.div style={{x: translateX}} >
                     <MagneticWrapper>
-                        <div className='relative'>
+                        <div>
                             <Rounded className={styles.circle}>
                                 <p>here!</p>
                             </Rounded>

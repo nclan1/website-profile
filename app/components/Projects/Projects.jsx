@@ -3,6 +3,7 @@ import { useEffect, useRef } from 'react';
 import { motion, useAnimation, useScroll, useTransform } from 'framer-motion';
 import Image from "next/image";
 import gif from "./nevergiveup.gif";
+import MagneticWrapper from '@/object/Magnetic/MagneticWrapper';
 
 import styles from './style.module.scss';
 
@@ -27,13 +28,17 @@ export default function Projects() {
             </div>
             <div className={styles.col2} ref={col2Ref}>
 
-                <p> always on the pursuit for opportunities to create/solve/improve. love to collaborate (with you!)</p>
+                <p> always looking for opportunities to create/solve/improve. love to collaborate (with you!)</p>
                 <motion.div style={{x: translateX}}>
-                     <Image 
+
+                    <MagneticWrapper>
+                         <Image 
                     src={gif}
                     alt='never give up'
                     className={styles.gif}
                     />  
+                    </MagneticWrapper>
+                    
                 </motion.div>
                
             </div>

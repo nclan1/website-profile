@@ -69,19 +69,21 @@
     .moreAbout {
         display: flex;
         justify-content: center;
-        padding-bottom: 300px;
+        padding-bottom: 100px;
+        z-index: 1;
         
         .circle {
             margin-top: -10vh;
             width: 180px;
             height: 180px;
             background-color: #524B4A;
-            border-radius: 100%;
+            border-radius: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
+            overflow: hidden;
             cursor: pointer;
-            position: absolute;
+            position: relative;
             p {
                 z-index: 1;
                 font-weight: 300;
