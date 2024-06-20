@@ -41,10 +41,30 @@
         flex-direction: column;
         height: 400px;
         padding: 3rem 0;
-        width: 40vw;
+        width: 42vw;
+        position: relative;
+        padding-left: 3rem;
+        // z-index: 0;
 
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 65%;
+            width: 1px;
+            background-color: white;
+        }
         p{
-            font-size: 36px;
+            font-size: 2rem;
+        }
+
+        .gif {
+            width: 240px;
+            height: 240px;
+            border-radius: 50%;
+            object-fit: cover;
         }
     }
 }
