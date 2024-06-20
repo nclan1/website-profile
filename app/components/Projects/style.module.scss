@@ -1,11 +1,21 @@
 
+
+.bigCont {
+    background-color: #1E1E20;
+    border-radius: 50px;
+
+    .cardContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 .container {
     display: flex;
     justify-content: space-between;
     padding: 0 6rem;
-    background-color: #1E1E20;
-    color: white;
     border-radius: 50px;
+    color: white;
     height: 100vh;
 
     .col1{
