@@ -6,7 +6,7 @@ export const slideUp = {
 
     open: (i) => ({
         y: "0%",
-        transition: {duration: 1, delay: 2.7}
+        transition: {duration: 1, delay: 2.3}
     }),
 
     closed: {

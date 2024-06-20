@@ -66,19 +66,27 @@ export default function Header() {
                     </div>
                 </MagneticWrapper>
                
-                <div className={styles.anch}>
-                    <a>work</a>
-                    <div className={styles.indicator}></div>
+                <MagneticWrapper>                         
+                    <div className={styles.anch}>
+                        <a>work</a>
+                        <div className={styles.indicator}></div>
+                
+                    </div>
+                </MagneticWrapper>  
 
-                </div>
-                <div className={styles.anch}>
-                    <a>hobbies</a>
-                    <div className={styles.indicator}></div>
-                </div>
-                <div className={styles.anch}>
-                    <a>contact</a>
-                    <div className={styles.indicator}></div>
-                </div>
+                <MagneticWrapper>  
+                    <div className={styles.anch}>
+                        <a>hobbies</a>
+                        <div className={styles.indicator}></div>
+                    </div>
+                </MagneticWrapper>  
+                
+                <MagneticWrapper> 
+                    <div className={styles.anch}>
+                        <a>contact</a>
+                        <div className={styles.indicator}></div>
+                    </div>
+                </MagneticWrapper> 
             </div>
 
         </div>
