@@ -9,6 +9,7 @@ import Profile from "@/object/Profile/Profile";
 import MagneticWrapper from "@/object/Magnetic/MagneticWrapper";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
+import NotCoding from "@/object/NotCoding/NotCoding";
 
 
 export default function Home() {
@@ -43,17 +44,17 @@ export default function Home() {
 
   return (
     <main>
-      <AnimatePresence mode="wait">
+      {/* <AnimatePresence mode="wait">
         {isLoading && <Index />}
-      </AnimatePresence>
-      <Header />
-
-      {/* <div className='h-1 w-full bg-black opacity-20'></div> */}
+      </AnimatePresence> */}
+      <Header className="z-10"/>
       <Landing />
-      {/* <div className='h-1 w-full bg-black mt-48 opacity-20'></div> */}
       <Profile />
       <About />
-      <Projects />
+      <Projects className="z-50"/>
+      <NotCoding />
+
+
 
       <section className="flex flex-col items-center gap-4">
       <MagneticWrapper>
