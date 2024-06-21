@@ -8,6 +8,7 @@ import { projects } from './data';
 import ProjectCards from './ProjectCards/ProjectCards';
 
 import styles from './style.module.scss';
+import Rounded from '@/object/RoundedButton/Rounded';
 
 export default function Projects() {
 
@@ -47,13 +48,15 @@ export default function Projects() {
                         <p> always looking for opportunities to create/solve/improve. love to collaborate (with you!)</p>
                         <motion.div style={{x: translateX}}>
 
-                            <MagneticWrapper>
-                                <Image 
-                            src={gif}
-                            alt='never give up'
-                            className={styles.gif}
-                            />  
-                            </MagneticWrapper>
+                            <a href="https://www.youtube.com/watch?v=KxGRhd_iWuE" target="_blank">
+                                <MagneticWrapper>
+                                    <Image 
+                                src={gif}
+                                alt='never give up'
+                                className={styles.gif}
+                                />  
+                                </MagneticWrapper>
+                            </a>
                             
                         </motion.div>
                     
@@ -66,6 +69,17 @@ export default function Projects() {
                     ))}
                 </div>
 
+                <div  className='self-center m-0 pb-16'>
+                    <MagneticWrapper>
+                        <div>
+                            <a href="https://github.com/nclan1" target="_blank">
+                                <Rounded className={styles.button}>
+                                    <p>more</p>
+                                </Rounded>
+                            </a>
+                        </div>
+                    </MagneticWrapper>
+                </div>
 
             </div>
     )
