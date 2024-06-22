@@ -55,7 +55,7 @@ export default function Home() {
   const Slide = (props) => {
 
     const direction = props.direction === 'left' ? -1: 1;
-    const translateX = useTransform(props.progress, [0, 1], [500 * direction, -500 * direction]);
+    const translateX = useTransform(props.progress, [0, 1], [900 * direction, -900 * direction]);
     return (
       <motion.div style={{left: props.left, x: translateX}} className="relative flex whitespace-nowrap">
         <Phrase src={props.src}/>

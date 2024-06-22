@@ -1,6 +1,6 @@
 'use client'
 import { useScroll, useTransform, motion } from 'framer-motion';
-import Picture1 from './Gym.jpg'
+import Picture1 from './Lift.jpg'
 import Picture2 from './Photo.jpg'
 import Picture3 from './Read.jpg'
 
