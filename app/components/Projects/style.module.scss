@@ -54,6 +54,16 @@
             font-weight: 700;
             line-height: 1.2;
 
+            span {
+                position: relative;
+                overflow: hidden;
+                display: inline-flex;
+
+                // a{
+                //     color: #B4FF86
+                // }
+            }
+
             a{
                 color: #B4FF86;
             }

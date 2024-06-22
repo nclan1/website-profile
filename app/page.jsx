@@ -15,6 +15,7 @@ import Profile from "@/object/Profile/Profile";
 import MagneticWrapper from "@/object/Magnetic/MagneticWrapper";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
+import Activity1 from "./components/Activity1/Activity1";
 
 export default function Home() {
 
@@ -107,9 +108,11 @@ export default function Home() {
         <Slide src={Picture1} direction={"left"} left={"-40%"} progress={scrollYProgress}/>
         <Slide src={Picture2} direction= {"right"} left={"-55%"} progress={scrollYProgress}/>
         <Slide src={Picture3} direction={"left"} left={"-48%"} progress={scrollYProgress}/>
+        <div className="h-[15vh]"/>
       </div>
       {/* // -----------------------notCoding component========================= */}
 
+      <Activity1 />
 
 
       <section className="flex flex-col items-center gap-4">

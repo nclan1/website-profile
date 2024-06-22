@@ -1,10 +1,10 @@
 
 import { useEffect, useRef, useState } from 'react';
-import { motion, useAnimation, useScroll, useTransform } from 'framer-motion';
+import { motion, useAnimation, useScroll, useTransform, useInView } from 'framer-motion';
 import Image from "next/image";
 import gif from "./nevergiveup.gif";
 import MagneticWrapper from '@/object/Magnetic/MagneticWrapper';
-import { projects } from './data';
+import { projects, slideUp } from './data';
 import ProjectCards from './ProjectCards/ProjectCards';
 
 import styles from './style.module.scss';
@@ -20,6 +20,14 @@ export default function Projects() {
     });
 
     const translateX = useTransform(scrollYProgress, [0, 1], [100, 0]);
+
+    const learning = "relentlessly";
+    const relent = "learning";
+
+    const containerTitle = useRef(null);
+    const isInViewTitle = useInView(containerTitle);
+    const containerTitle1 = useRef(null);
+    const isInViewTitle1 = useInView(containerTitle1);
 
     // const [isSticky, setIsSticky] = useState(false);
     
@@ -38,7 +46,28 @@ export default function Projects() {
             <div className={styles.bigCont}>
                 <div className={styles.container}>
                     <div className={styles.col1}>
-                        <p>relentlessly <a>learning</a>.</p>
+                        <p ref={containerTitle}>
+                            {
+                                learning.split("").map((letter, i) => {
+                                    return <span key={i} className={styles}>
+                                        <motion.span variants={slideUp} custom={i} initial='initial' animate={isInViewTitle ? "open" : "closed"}>
+                                            {letter==="a"  ? <a>{letter}</a>: letter}
+                                        </motion.span>
+                                    </span>
+                                })
+                            }
+                        </p>
+                        <p ref={containerTitle1}>
+                            {
+                                relent.split("").map((letter, i) => {
+                                    return <span key={i} className={styles}>
+                                        <motion.span variants={slideUp} custom={i} initial='initial' animate={isInViewTitle1 ? "open" : "closed"}>
+                                            <a>{letter}</a>
+                                        </motion.span>
+                                    </span>
+                                })
+                            }
+                        </p>
                         <h3>what i've made <span>(more coming...)</span></h3>
                     
 
