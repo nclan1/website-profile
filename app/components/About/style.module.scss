@@ -17,6 +17,13 @@
         color: #524B4A;
         flex-direction: row;
 
+        .mask {
+            position: relative;
+            overflow: hidden;
+            display: inline-flex;
+            // width: 40
+        }
+
         .line {
             // margin-top: -21vh;
             width: 300px;

@@ -4,8 +4,8 @@ import Lenis from "lenis";
 import { AnimatePresence, useScroll, useTransform, motion } from "framer-motion";
 import Image from "next/image";
 
-import Picture1 from './Gym.jpg'
-import Picture2 from './Photo.jpg'
+import Picture2 from './Lift.jpg'
+import Picture1 from './Photo.jpg'
 import Picture3 from './Read.jpg'
 
 import Index from "./components/Preloader";
@@ -15,7 +15,6 @@ import Profile from "@/object/Profile/Profile";
 import MagneticWrapper from "@/object/Magnetic/MagneticWrapper";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
-import NotCoding from "@/object/NotCoding/NotCoding";
 
 export default function Home() {
 
@@ -104,7 +103,7 @@ export default function Home() {
       {/* // -----------------------notCoding component========================= */}
 
       <div className="overflow-hidden">
-        <div className="h-[20vh]"/>
+        <div className="h-[15vh]"/>
         <Slide src={Picture1} direction={"left"} left={"-40%"} progress={scrollYProgress}/>
         <Slide src={Picture2} direction= {"right"} left={"-55%"} progress={scrollYProgress}/>
         <Slide src={Picture3} direction={"left"} left={"-48%"} progress={scrollYProgress}/>
