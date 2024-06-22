@@ -1,7 +1,7 @@
 'use client';
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import Lenis from "lenis";
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, useScroll, useTransform, motion } from "framer-motion";
 import Image from "next/image";
 
 import Picture1 from './Gym.jpg'
@@ -46,29 +46,46 @@ export default function Home() {
 
   }, []); 
 
+
+
+
+
+  // -----------------------notCoding component=========================
+
   const Slide = (props) => {
+
+    const direction = props.direction === 'left' ? -1: 1;
+    const translateX = useTransform(props.progress, [0, 1], [500 * direction, -500 * direction]);
     return (
-      <div style={{left: props.left}} className="relative flex whitespace-nowrap">
+      <motion.div style={{left: props.left, x: translateX}} className="relative flex whitespace-nowrap">
         <Phrase src={props.src}/>
         <Phrase src={props.src}/>
         <Phrase src={props.src}/>
         <Phrase src={props.src}/>
         <Phrase src={props.src}/>
         <Phrase src={props.src}/>
-      </div>
+      </motion.div>
     )
   }
   
   const Phrase = ({src}) => {
     return (
       <div className={'px-5 flex gap-5 items-center'}>
-        <p className='text-[3vw]'>not coding?</p>
-        <span className="relative h-[7.5vw] aspect-[4/2] rounded-full overflow-hidden">
+        <p className='text-[5vw] font-medium text-[#524B4A]'>not coding?</p>
+        <span className="relative h-[7vw] aspect-[4/2] rounded-full overflow-hidden">
           <Image style={{objectFit: "cover"}} src={src} alt="image" fill/>
         </span>
       </div>
     )
   }
+
+  const container = useRef();
+  const { scrollYProgress } = useScroll({
+    target: container,
+    offset: ['start end', 'end start']
+  })
+
+    // -----------------------notCoding component=========================
 
 
   return (
@@ -83,12 +100,16 @@ export default function Home() {
       <Projects className="z-50"/>
       {/* <NotCoding /> */}
 
+
+      {/* // -----------------------notCoding component========================= */}
+
       <div className="overflow-hidden">
         <div className="h-[20vh]"/>
-        <Slide src={Picture1} left={"-40%"}/>
-        <Slide src={Picture2} left={"-25%"}/>
-        <Slide src={Picture3} left={"-75%"}/>
+        <Slide src={Picture1} direction={"left"} left={"-40%"} progress={scrollYProgress}/>
+        <Slide src={Picture2} direction= {"right"} left={"-55%"} progress={scrollYProgress}/>
+        <Slide src={Picture3} direction={"left"} left={"-48%"} progress={scrollYProgress}/>
       </div>
+      {/* // -----------------------notCoding component========================= */}
 
 
 
