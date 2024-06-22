@@ -2,6 +2,12 @@
 import { useEffect, useState } from "react";
 import Lenis from "lenis";
 import { AnimatePresence } from "framer-motion";
+import Image from "next/image";
+
+import Picture1 from './Gym.jpg'
+import Picture2 from './Photo.jpg'
+import Picture3 from './Read.jpg'
+
 import Index from "./components/Preloader";
 import Header from "./components/Header/Header";
 import Landing from "./components/Landing/Landing";
@@ -10,7 +16,6 @@ import MagneticWrapper from "@/object/Magnetic/MagneticWrapper";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import NotCoding from "@/object/NotCoding/NotCoding";
-
 
 export default function Home() {
 
@@ -41,6 +46,30 @@ export default function Home() {
 
   }, []); 
 
+  const Slide = (props) => {
+    return (
+      <div style={{left: props.left}} className="relative flex whitespace-nowrap">
+        <Phrase src={props.src}/>
+        <Phrase src={props.src}/>
+        <Phrase src={props.src}/>
+        <Phrase src={props.src}/>
+        <Phrase src={props.src}/>
+        <Phrase src={props.src}/>
+      </div>
+    )
+  }
+  
+  const Phrase = ({src}) => {
+    return (
+      <div className={'px-5 flex gap-5 items-center'}>
+        <p className='text-[3vw]'>not coding?</p>
+        <span className="relative h-[7.5vw] aspect-[4/2] rounded-full overflow-hidden">
+          <Image style={{objectFit: "cover"}} src={src} alt="image" fill/>
+        </span>
+      </div>
+    )
+  }
+
 
   return (
     <main>
@@ -52,7 +81,14 @@ export default function Home() {
       <Profile />
       <About />
       <Projects className="z-50"/>
-      <NotCoding />
+      {/* <NotCoding /> */}
+
+      <div className="overflow-hidden">
+        <div className="h-[20vh]"/>
+        <Slide src={Picture1} left={"-40%"}/>
+        <Slide src={Picture2} left={"-25%"}/>
+        <Slide src={Picture3} left={"-75%"}/>
+      </div>
 
 
 
