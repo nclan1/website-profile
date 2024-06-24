@@ -2,18 +2,18 @@
 
 import styles from "./styles.module.scss";
 
-import bigbook from "./bigbook.JPG";
-import cafenero from "./cafenero.JPG";
-import Quran from "./Quran.jpg";
+import guitar from "./guitar.png";
+import joker from "./joker.png";
+import talent from "./talent.JPG";
 
 import { useRef, useEffect, useLayoutEffect } from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-export default function Activity1() {
+export default function Activity2() {
 
     const container = useRef(null);
-    const word = "literature";
+    const word = "strings";
     const imagesRef = useRef([]);
 
     const {scrollYProgress} = useScroll({
@@ -24,27 +24,43 @@ export default function Activity1() {
   
 
     const sm = useTransform(scrollYProgress, [0, 1], [0, -50]);
-    const md = useTransform(scrollYProgress, [0, 1], [0, 150]);
+    const md = useTransform(scrollYProgress, [0, 1], [0, -150]);
     const lg = useTransform(scrollYProgress, [0, 1], [0, -250]);
 
     const images = [
             {
-                src: cafenero,
+                src: talent,
                 y: 0
             },
             {
-                src: bigbook,
+                src: guitar,
                 y: lg
             },
             {
-                src: Quran,
-                y: sm
+                src: joker,
+                y: md
             }
         ]
 
     return (
         <div ref={container} className={styles.container}>
             
+
+            <div className={styles.words}>
+
+                <div className={styles.body}>
+                    <motion.h1 style={{y: sm}}>dabble in</motion.h1>
+                </div>
+                <p>
+                    {
+                        word.split("").map((letter, i) => {
+                            const y = useTransform(scrollYProgress, [0, 1], [0, Math.floor(Math.random() * -75) - 25])
+                            return <motion.span style={{top: y}} key={`l_${i}`}>{letter}</motion.span>
+                        })
+                    }
+                </p>
+            </div>
+
 
             <div className={styles.images}>
                 {
@@ -55,21 +71,6 @@ export default function Activity1() {
                             </motion.div>
                     })
                 }
-            </div>
-
-            <div className={styles.words}>
-
-                <div className={styles.body}>
-                    <motion.h1 style={{y: sm}}>partake in</motion.h1>
-                </div>
-                <p>
-                    {
-                        word.split("").map((letter, i) => {
-                            const y = useTransform(scrollYProgress, [0, 1], [0, Math.floor(Math.random() * -75) - 25])
-                            return <motion.span style={{top: y}} key={`l_${i}`}>{letter}</motion.span>
-                        })
-                    }
-                </p>
             </div>
             
         </div>

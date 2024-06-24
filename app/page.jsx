@@ -16,6 +16,7 @@ import MagneticWrapper from "@/object/Magnetic/MagneticWrapper";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Activity1 from "./components/Activity1/Activity1";
+import Activity2 from "./components/Activity2/Activity2";
 
 export default function Home() {
 
@@ -108,14 +109,19 @@ export default function Home() {
         <Slide src={Picture1} direction={"left"} left={"-40%"} progress={scrollYProgress}/>
         <Slide src={Picture2} direction= {"right"} left={"-55%"} progress={scrollYProgress}/>
         <Slide src={Picture3} direction={"left"} left={"-48%"} progress={scrollYProgress}/>
-        <div className="h-[15vh]"/>
+        <div className="h-[7.5vh]"/>
       </div>
       {/* // -----------------------notCoding component========================= */}
+      <div className="flex justify-center">
+        <h1 className="flex text-5xl">i get up to some stuff <a className="text-xl">like...</a></h1>
+      </div>
+      <div className="h-[7.5vh]"/>
 
       <Activity1 />
+      <Activity2 />
 
 
-      <section className="flex flex-col items-center gap-4">
+      {/* <section className="flex flex-col items-center gap-4">
       <MagneticWrapper>
           <div className="w-52 h-52 bg-red-400 rounded-full flex items-center justify-center">
             <MagneticWrapper>
@@ -187,7 +193,7 @@ export default function Home() {
         <MagneticWrapper>
           <div className="w-52 h-52 bg-teal-400 rounded-full flex items-center justify-center"></div>
         </MagneticWrapper>
-      </section>
+      </section> */}
     </main>
     
     
