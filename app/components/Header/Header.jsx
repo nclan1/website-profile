@@ -44,8 +44,9 @@ export default function Header() {
     return (
 
         <>
-        <div className="overlay" style={{
+        <div className="overlay" onClick={() => {setIsActive(!isActive)}} style={{
             position: 'fixed',
+            visibility: isActive ? 'visible' : 'hidden',
             top: 0,
             left: 0,
             width: '100%',

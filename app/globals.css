@@ -6,12 +6,28 @@ body {
   margin: 0px;
   overflow: hidden;  
   background-color: white;
-  background-image: url("../assets/images/Noise.png");
   background-size: cover; /* Cover the entire page */
   background-position: center; /* Center the background image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-attachment: fixed; /* Keep the image fixed during scroll */
   background-blend-mode: normal;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../assets/images/Noise3.jpg");
+  background-size: cover; /* Cover the entire page */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-attachment: fixed; /* Keep the image fixed during scroll */
+  opacity: 0.3; /* Adjust the opacity as needed */
+  z-index: -1;
 }
 
 
