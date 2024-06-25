@@ -17,6 +17,7 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Activity1 from "./components/Activity1/Activity1";
 import Activity2 from "./components/Activity2/Activity2";
+import Photography from "./components/Photography/Photography";
 
 export default function Home() {
 
@@ -119,6 +120,7 @@ export default function Home() {
 
       <Activity1 />
       <Activity2 />
+      <Photography />
 
 
       <section className="flex flex-col items-center gap-4">
