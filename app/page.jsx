@@ -113,15 +113,15 @@ export default function Home() {
       </div>
       {/* // -----------------------notCoding component========================= */}
       <div className="flex justify-center">
-        <h1 className="flex text-5xl">i get up to some stuff <a className="text-xl">like...</a></h1>
+        <h1 className=" text-5xl">i get up to some stuff <a className="text-xl opacity-50">like...</a></h1>
       </div>
-      <div className="h-[7.5vh]"/>
+      <div className="h-[9vh]"/>
 
       <Activity1 />
       <Activity2 />
 
 
-      {/* <section className="flex flex-col items-center gap-4">
+      <section className="flex flex-col items-center gap-4">
       <MagneticWrapper>
           <div className="w-52 h-52 bg-red-400 rounded-full flex items-center justify-center">
             <MagneticWrapper>
@@ -151,49 +151,9 @@ export default function Home() {
         </MagneticWrapper>
         
         <MagneticWrapper>
-          <div className="w-52 h-52 bg-emerald-400 rounded-full flex items-center justify-center"></div>
-        </MagneticWrapper>
-        
-        <MagneticWrapper>
           <div className="w-52 h-52 bg-teal-400 rounded-full flex items-center justify-center"></div>
         </MagneticWrapper>
-        
-        <MagneticWrapper>
-          <div className="w-52 h-52 bg-cyan-400 rounded-full flex items-center justify-center"></div>
-        </MagneticWrapper>
-        
-        <MagneticWrapper>
-          <div className="w-52 h-52 bg-red-400 rounded-full flex items-center justify-center"></div>
-        </MagneticWrapper>
-        
-        <MagneticWrapper>
-          <div className="w-52 h-52 bg-orange-400 rounded-full flex items-center justify-center"></div>
-        </MagneticWrapper>
-        
-        <MagneticWrapper>
-          <div className="w-52 h-52 bg-amber-400 rounded-full flex items-center justify-center"></div>
-        </MagneticWrapper>
-        
-        <MagneticWrapper>
-          <div className="w-52 h-52 bg-yellow-400 rounded-full flex items-center justify-center"></div>
-        </MagneticWrapper>
-        
-        <MagneticWrapper>
-          <div className="w-52 h-52 bg-lime-400 rounded-full flex items-center justify-center"></div>
-        </MagneticWrapper>
-        
-        <MagneticWrapper>
-          <div className="w-52 h-52 bg-green-400 rounded-full flex items-center justify-center"></div>
-        </MagneticWrapper>
-        
-        <MagneticWrapper>
-          <div className="w-52 h-52 bg-emerald-400 rounded-full flex items-center justify-center"></div>
-        </MagneticWrapper>
-        
-        <MagneticWrapper>
-          <div className="w-52 h-52 bg-teal-400 rounded-full flex items-center justify-center"></div>
-        </MagneticWrapper>
-      </section> */}
+      </section>
     </main>
     
     
