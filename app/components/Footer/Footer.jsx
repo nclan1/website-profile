@@ -9,6 +9,8 @@ export default function Footer() {
 
     const [time, setTime] = useState();
 
+    const title = "want to connect?";
+
     useEffect(() => {
         function updateTime() {
             const options = {
@@ -70,10 +72,36 @@ export default function Footer() {
             <div className={styles.foot}>
                 <h1>© 2024 <br />nolan</h1>
                 <p><span>local time: </span><br /> {time} edt</p>
-                <p>
-                    <span>socials</span><br />
+                <div className={styles.an}>
+
+                    <h2 className="opacity-50">social</h2>
+                    <div className="flex flex-row gap-8">
+                        <MagneticWrapper>
+                            <div className={styles.anch}>
+                                <a href="https://github.com/nclan1" target="_blank">github</a>
+                            </div>
+                        </MagneticWrapper>
+    
+                        <MagneticWrapper>
+                            <div className={styles.anch}>
+                                <a href="https://www.instagram.com/mr_lan1213/" target="_blank">instagram</a>
+                            </div>
+                        </MagneticWrapper>
+    
+                        <MagneticWrapper>
+                            <div className={styles.anch}>
+                                <a href="https://www.linkedin.com/in/cnnolan/" target="_blank">linkedin</a>
+                            </div>
+                        </MagneticWrapper>
+    
+                        <MagneticWrapper>
+                            <div className={styles.anch}>
+                                <a href="https://medium.com/@nclan1" target="_blank">medium</a>
+                            </div>
+                        </MagneticWrapper>
+                    </div>
                     
-                </p>
+                </div>
             </div>
         </div>
     )

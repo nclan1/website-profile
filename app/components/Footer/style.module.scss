@@ -89,18 +89,32 @@
             font-weight: 600;
             color: #524B4A;
             line-height: 1;
-            width: 24vw;
+            width: 30vw;
         }
         p {
             align-self: flex-end;
             color: #524B4A;
-            font-size: 5vh;
+            font-size: 2rem;
             font-weight: 600;
-            width: 25vw;
+            width: 20vw;
 
             span {
                 opacity: 0.5;
             }
+        }
+        .an {
+            display: flex;
+            align-self: flex-end;
+            color: #524B4A;
+            font-size: 2rem;
+            font-weight: 600;
+            width:40vw;
+            flex-direction: column;
+
+            a {
+                cursor: pointer;
+            }
+            
         }
     }
     

@@ -93,9 +93,9 @@ export default function Home() {
 
   return (
     <main>
-      {/* <AnimatePresence mode="wait">
+      <AnimatePresence mode="wait">
         {isLoading && <Index />}
-      </AnimatePresence> */}
+      </AnimatePresence>
       <Header className="z-10"/>
       <Landing />
       <Profile />
@@ -124,7 +124,7 @@ export default function Home() {
       <Photography />
       <Footer />
 
-
+{/* 
       <section className="flex flex-col items-center gap-4">
       <MagneticWrapper>
           <div className="w-52 h-52 bg-red-400 rounded-full flex items-center justify-center">
@@ -157,7 +157,7 @@ export default function Home() {
         <MagneticWrapper>
           <div className="w-52 h-52 bg-teal-400 rounded-full flex items-center justify-center"></div>
         </MagneticWrapper>
-      </section>
+      </section> */}
     </main>
     
     
