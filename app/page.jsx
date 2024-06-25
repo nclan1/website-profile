@@ -18,6 +18,7 @@ import Projects from "./components/Projects/Projects";
 import Activity1 from "./components/Activity1/Activity1";
 import Activity2 from "./components/Activity2/Activity2";
 import Photography from "./components/Photography/Photography";
+import Footer from "./components/Footer/Footer";
 
 export default function Home() {
 
@@ -121,6 +122,7 @@ export default function Home() {
       <Activity1 />
       <Activity2 />
       <Photography />
+      <Footer />
 
 
       <section className="flex flex-col items-center gap-4">

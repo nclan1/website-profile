@@ -1,0 +1,107 @@
+
+.container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+
+    .connect {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 6vw;
+
+        .header {
+            font-size: 12vh;
+            font-weight: 600;
+            align-self: flex-start;
+            color: #524B4A;
+            padding-bottom: 4vh;
+        }
+
+        .divider{
+            align-self: center;
+
+            .line {
+                width: 87.5vw;
+                background-color: black;
+                height: 1px;
+                opacity: 0.5;
+
+            }
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: row;
+            align-self: flex-start;
+            padding: 5vh 0;
+            gap: 2vw;
+
+            .button {
+                align-self: center;
+                border: solid 1px #524B4A;
+                color: black;
+                width: 20vw;
+                height: 10vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50px;
+                position: relative;
+                cursor: pointer;
+
+                p {
+                    font-size: 1.25rem;
+                    z-index: 1;
+                    font-weight: 400;
+                }
+            }
+
+            .button2 {
+                align-self: center;
+                border: solid 1px #524B4A;
+                color: black;
+                width: 15vw;
+                height: 10vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50px;
+                position: relative;
+                cursor: pointer;
+
+                p {
+                    font-size: 1.25rem;
+                    z-index: 1;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+    .foot {
+        display: flex;
+        padding: 0 6vw;
+        flex-direction: row;
+        justify-content: space-between;
+
+        h1 {
+            font-size: 15vh;
+            font-weight: 600;
+            color: #524B4A;
+            line-height: 1;
+            width: 24vw;
+        }
+        p {
+            align-self: flex-end;
+            color: #524B4A;
+            font-size: 5vh;
+            font-weight: 600;
+            width: 25vw;
+
+            span {
+                opacity: 0.5;
+            }
+        }
+    }
+    
+}
