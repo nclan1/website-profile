@@ -2,6 +2,10 @@
 .container{
     height: 300vh;
     position: relative;
+    background-color: #1E1E20;
+    border-radius: 50px;
+    margin-top: -100px;
+    padding: 100px 0;
 
     .sticky {
         position: sticky;
