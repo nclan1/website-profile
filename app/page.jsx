@@ -96,7 +96,7 @@ export default function Home() {
       <AnimatePresence mode="wait">
         {isLoading && <Index />}
       </AnimatePresence>
-      <Header className="z-10"/>
+      <Header className="z-100"/>
       <Landing />
       <Profile />
       <About />
@@ -124,40 +124,6 @@ export default function Home() {
       <Photography />
       <Footer />
 
-{/* 
-      <section className="flex flex-col items-center gap-4">
-      <MagneticWrapper>
-          <div className="w-52 h-52 bg-red-400 rounded-full flex items-center justify-center">
-            <MagneticWrapper>
-              <h1 className="text-3xl">nolan</h1>
-            </MagneticWrapper>
-          </div>
-        </MagneticWrapper>
-        
-        <MagneticWrapper>
-          <div className="w-52 h-52 bg-orange-400 rounded-full flex items-center justify-center"></div>
-        </MagneticWrapper>
-        
-        <MagneticWrapper>
-          <div className="w-52 h-52 bg-amber-400 rounded-full flex items-center justify-center"></div>
-        </MagneticWrapper>
-        
-        <MagneticWrapper>
-          <div className="w-52 h-52 bg-yellow-400 rounded-full flex items-center justify-center"></div>
-        </MagneticWrapper>
-        
-        <MagneticWrapper>
-          <div className="w-52 h-52 bg-lime-400 rounded-full flex items-center justify-center"></div>
-        </MagneticWrapper>
-        
-        <MagneticWrapper>
-          <div className="w-52 h-52 bg-green-400 rounded-full flex items-center justify-center"></div>
-        </MagneticWrapper>
-        
-        <MagneticWrapper>
-          <div className="w-52 h-52 bg-teal-400 rounded-full flex items-center justify-center"></div>
-        </MagneticWrapper>
-      </section> */}
     </main>
     
     

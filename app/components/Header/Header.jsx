@@ -24,6 +24,8 @@ export default function Header() {
         if(isActive) setIsActive(false);
     }, [pathname])
 
+
+
     useLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
         gsap.to(button.current, {
@@ -42,6 +44,17 @@ export default function Header() {
     return (
 
         <>
+        <div className="overlay" style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            backgroundColor: isActive ? 'rgba(0, 0, 0, 0.4)' : 'rgba(0, 0, 0, 0)',
+            zIndex: 1000,
+            transition: 'all 0.87s ease'
+        }}></div>
+
         <div className={styles.header}>
 
             <MagneticWrapper>
