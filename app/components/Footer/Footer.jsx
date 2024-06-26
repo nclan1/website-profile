@@ -2,9 +2,10 @@
 import styles from "./style.module.scss";
 import MagneticWrapper from "@/object/Magnetic/MagneticWrapper";
 import Rounded from "@/object/RoundedButton/Rounded";
+import { slideUp } from "../About/anim";
 
 import { useEffect, useState, useRef} from "react";
-import { useScroll, useTransform, motion } from "framer-motion";
+import { useScroll, useTransform, motion, useInView } from "framer-motion";
 
 
 export default function Footer() {
@@ -15,6 +16,9 @@ export default function Footer() {
         target: cont,
         offset: ['start end', 'end end']
     })
+
+    const containerTitle = useRef(null);
+    const isInViewTitle = useInView(containerTitle);
 
 
     const y = useTransform(scrollYProgress, [0, 1], [-500, 0])
@@ -49,7 +53,17 @@ export default function Footer() {
 
             <div className={styles.connect}>
                 <div className={styles.header}>
-                    <p>want to <a className="text-emerald-300">connect?</a></p>
+                    <p ref={containerTitle}>
+                        {
+                            title.split(" ").map((words, i) => {
+                                return <span key={i} className={styles}>
+                                    <motion.span variants={slideUp} custom={i} initial='initial' animate={isInViewTitle ? "open" : "closed"}>
+                                        {words==="connect?" ? <a>{words}</a>: words}
+                                    </motion.span>
+                                </span>
+                            })
+                        }
+                    </p>
                 </div>
 
                 <div className={styles.divider}>

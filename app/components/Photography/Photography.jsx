@@ -17,6 +17,7 @@ export default function Photography() {
 
     const container = useRef(null);
     const container2 = useRef(null);
+    const container3 = useRef(null);
 
     const { scrollYProgress } = useScroll({
         target: container,
@@ -28,12 +29,18 @@ export default function Photography() {
         offset: ["start end", "end start"]
     })
 
+    const { scrollYProgress: scrollYProgress3 } = useScroll({
+        target: container3,
+        offset: ["start end", "start start"]
+    })
+
     const scale2 = useTransform(scrollYProgress, [0, 1], [1, 3.5])
     const scale5 = useTransform(scrollYProgress, [0, 1], [1, 5])
     const scale6 = useTransform(scrollYProgress, [0, 1], [1, 6])
     const scale8 = useTransform(scrollYProgress, [0, 1], [1, 8])
     const scale9 = useTransform(scrollYProgress, [0, 1], [1, 9])
     const height = useTransform(scrollYProgress2, [0, 0.9], [15, 0])
+    const height2 = useTransform(scrollYProgress3, [0, 0.9], [40, 0])
 
     const pictures = [
         {
@@ -68,6 +75,12 @@ export default function Photography() {
 
     return (
         <>
+            <div className={styles.contain3} ref={container3}>
+                <motion.div style={{height: height2}} className={styles.circleContainer}>
+                        <div className={styles.circle}></div>
+                </motion.div>
+            </div>
+
             <div ref={container} className={styles.container}>
                 <div className={styles.sticky}>
                     {

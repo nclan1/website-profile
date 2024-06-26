@@ -15,6 +15,24 @@
             align-self: flex-start;
             color: #524B4A;
             padding-bottom: 4vh;
+
+            p {
+                font-size: 12vh;
+                font-weight: 600;
+
+                span {
+                    position: relative;
+                    overflow: hidden;
+                    display: inline-flex;
+                    margin-right: 0.5vw;
+
+                    a {
+                        color: rgb(110 231 183);
+                    }
+
+                }
+            }
+
         }
 
         .divider{

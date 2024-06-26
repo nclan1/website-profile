@@ -1,4 +1,25 @@
 
+.contain3 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transform: translateY(-15vh);
+        .circleContainer {
+            position: relative;
+
+            .circle {
+                height: 1550%;
+                width: 200%;
+                left: -47%;
+                top: 0;
+                border-radius: 50% 50% 0 0;
+                background-color: #1E1E20;
+                position: absolute;
+
+            }
+        }
+}
+
 .container{
     height: 300vh;
     position: relative;
@@ -12,6 +33,7 @@
         overflow: hidden;
         top: 0;
         height: 100vh;
+        
 
         .el {
             width: 100%;
@@ -21,7 +43,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-
+            
             .imgContainer {
                 position: relative;
                 width: 25vw;
