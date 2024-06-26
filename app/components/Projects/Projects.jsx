@@ -46,28 +46,30 @@ export default function Projects() {
             <div className={styles.bigCont}>
                 <div className={styles.container}>
                     <div className={styles.col1}>
-                        <p ref={containerTitle}>
-                            {
-                                learning.split("").map((letter, i) => {
-                                    return <span key={i} className={styles}>
-                                        <motion.span variants={slideUp} custom={i} initial='initial' animate={isInViewTitle ? "open" : "closed"}>
-                                            {letter==="a"  ? <a>{letter}</a>: letter}
-                                        </motion.span>
-                                    </span>
-                                })
-                            }
-                        </p>
-                        <p ref={containerTitle1}>
-                            {
-                                relent.split("").map((letter, i) => {
-                                    return <span key={i} className={styles}>
-                                        <motion.span variants={slideUp} custom={i} initial='initial' animate={isInViewTitle1 ? "open" : "closed"}>
-                                            <a>{letter}</a>
-                                        </motion.span>
-                                    </span>
-                                })
-                            }
-                        </p>
+                        <div className='flex flex-col gap-0'>
+                            <p ref={containerTitle}>
+                                {
+                                    learning.split("").map((letter, i) => {
+                                        return <span key={i} className={styles}>
+                                            <motion.span variants={slideUp} custom={i} initial='initial' animate={isInViewTitle ? "open" : "closed"}>
+                                                {letter==="a"  ? <a>{letter}</a>: letter}
+                                            </motion.span>
+                                        </span>
+                                    })
+                                }
+                            </p>
+                            <p ref={containerTitle1}>
+                                {
+                                    relent.split("").map((letter, i) => {
+                                        return <span key={i} className={styles}>
+                                            <motion.span variants={slideUp} custom={i} initial='initial' animate={isInViewTitle1 ? "open" : "closed"}>
+                                                <a>{letter}</a>
+                                            </motion.span>
+                                        </span>
+                                    })
+                                }
+                            </p>
+                        </div>
                         <h3>what i've made <span>(more coming...)</span></h3>
                     
 

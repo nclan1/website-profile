@@ -4,6 +4,7 @@
     flex-direction: column;
     // position: sticky;
     // top: 5vh;
+    padding-bottom: 3rem;
 
 
     .title {
@@ -78,11 +79,12 @@
     .moreAbout {
         display: flex;
         justify-content: center;
-        padding-bottom: 100px;
+        // padding-bottom: 100px;
         z-index: 1;
+        margin-top: -7vh;
         
         .circle {
-            margin-top: -10vh;
+            // margin-top: -10vh;
             width: 180px;
             height: 180px;
             background-color: #524B4A;

@@ -35,7 +35,7 @@
 .container {
     display: flex;
     justify-content: space-between;
-    padding: 0 6rem;
+    padding: 4rem 6rem;
     border-radius: 50px;
     color: white;
     // position: sticky;
@@ -45,9 +45,10 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 3rem 0;
-        height: 50vh;
+        // padding: 3rem 0;
         width: 60vw;
+        height: 100%;
+        margin-bottom: 6rem;
 
         p{
             font-size: 6rem;
@@ -83,10 +84,11 @@
         display: flex;
         flex-direction: column;
         height: 400px;
-        padding: 3rem 0;
+        // padding: 0rem 0;
         width: 42vw;
         position: relative;
         padding-left: 3rem;
+        justify-content: space-between;
         // z-index: 0;
 
         &::before {
@@ -95,7 +97,7 @@
             left: 0;
             top: 50%;
             transform: translateY(-50%);
-            height: 65%;
+            height: 90%;
             width: 1px;
             background-color: white;
         }
@@ -105,8 +107,8 @@
 
         .gif {
             margin-top: 10px;
-            width: 10vw;
-            height: 10vw;
+            width: 31vh;
+            height: 31vh;
             border-radius: 50%;
             object-fit: cover;
             cursor: pointer;

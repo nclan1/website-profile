@@ -7,7 +7,8 @@
     gap: 3.5rem;
     padding-left: 6rem;
     z-index: 10;
-    margin-top: -7vh;
+    margin-top: 0vh;
+    margin-bottom: 5vh;
 
 
 
@@ -36,15 +37,15 @@
     }
     
     .profileContainer {
-        height: 26vw;
-        width: 20vw;
+        height: 52vh;
+        width: 40vh;
         overflow: hidden;
         border-radius: 30px;
     }
     
     .profilePic {
-        height: 26vw;
-        width: 20vw;
+        height: 52vh;
+        width: 40vh;
         object-fit: cover;
         z-index: 3;
         border-radius: 30px;
