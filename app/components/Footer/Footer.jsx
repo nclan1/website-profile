@@ -3,11 +3,21 @@ import styles from "./style.module.scss";
 import MagneticWrapper from "@/object/Magnetic/MagneticWrapper";
 import Rounded from "@/object/RoundedButton/Rounded";
 
-import { useEffect, useState} from "react";
+import { useEffect, useState, useRef} from "react";
+import { useScroll, useTransform, motion } from "framer-motion";
+
 
 export default function Footer() {
 
     const [time, setTime] = useState();
+    const cont = useRef(null);
+    const { scrollYProgress } = useScroll({
+        target: cont,
+        offset: ['start end', 'end end']
+    })
+
+
+    const y = useTransform(scrollYProgress, [0, 1], [-500, 0])
 
     const title = "want to connect?";
 
@@ -35,7 +45,7 @@ export default function Footer() {
     
 
     return (
-        <div className={styles.container}>
+        <motion.div style={{y}} className={styles.container} ref={cont}>
 
             <div className={styles.connect}>
                 <div className={styles.header}>
@@ -103,6 +113,6 @@ export default function Footer() {
                     
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
