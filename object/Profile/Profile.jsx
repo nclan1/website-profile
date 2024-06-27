@@ -4,8 +4,8 @@ import styles from "./style.module.scss";
 import Image from "next/image";
 import profilePic from "./Profile.jpg";
 import { useRef } from "react";
-import { slideUp, opacity } from "./anim";
-import { useScroll, useTransform, motion, useInView } from "framer-motion";
+import { slideUp, opacity, slideUpLetter } from "./anim";
+import { useScroll, useTransform, motion } from "framer-motion";
 
 export default function Profile(){
 
@@ -15,8 +15,8 @@ export default function Profile(){
         offset: ['start end', 'end start']
     })
 
-    const words = useRef(null);
-    const isInView = useInView(words)
+    const uni = "boston uni"
+    
 
 
     const sm = useTransform(scrollYProgress, [0, 1], [0, -50]);
@@ -40,7 +40,18 @@ export default function Profile(){
 
             <motion.h1 style={{y: md}}>
                 <div className={styles.school}>
-                    <motion.h1 variants={ slideUp } initial ='initial' animate="open">boston <a>uni</a></motion.h1>
+                    <h1>
+                        {
+                            uni.split(" ").map((word, i) => {
+                                return <span key={i} className={styles.mask}>
+                                    <motion.span variants={slideUpLetter} custom={i} initial='initial' animate="open">
+                                        {word==="uni" ? <a>{word}</a> : word}
+                                    </motion.span>
+                                </span>
+                            })
+                        }
+                    </h1>
+                    {/* <motion.h1 variants={ slideUp } initial ='initial' animate="open">boston <a>uni</a></motion.h1> */}
                     <h2>42°21’28’’N, 71°03’42”O</h2>
                 </div>
             </motion.h1>
