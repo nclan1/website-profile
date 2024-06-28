@@ -30,6 +30,10 @@ body::before {
   z-index: -1;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 
 html.lenis, html.lenis body {
   height: auto;

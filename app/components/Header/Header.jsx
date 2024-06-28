@@ -8,12 +8,16 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Nav from "./Nav/Nav";
 import MagneticWrapper from "@/object/Magnetic/MagneticWrapper";
 import Rounded from "@/object/RoundedButton/Rounded";
+import Lenis from "lenis";
 
 
 import styles from './style.module.scss'
 
 
 export default function Header() {
+
+
+    
 
     const header = useRef(null);
     const [isActive, setIsActive] = useState(false);
@@ -74,7 +78,7 @@ export default function Header() {
             <div className={styles.nav}>
                 <MagneticWrapper>
                      <div className={styles.anch}>
-                        <a href="#about">about</a>
+                        <a href="#about" >about</a>
                         {/* <a className={styles.about}>about</a> */}
                         <div className={styles.indicator}></div>
                     </div>
