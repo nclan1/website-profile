@@ -46,7 +46,7 @@ export default function About() {
     const translateX = useTransform(scrollYProgress1, [0, 1], [0, -270]);
 
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id='about'>
             
             <div className={styles.title} ref={cont}>
                

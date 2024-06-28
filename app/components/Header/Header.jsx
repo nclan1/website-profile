@@ -74,7 +74,7 @@ export default function Header() {
             <div className={styles.nav}>
                 <MagneticWrapper>
                      <div className={styles.anch}>
-                        <a>about</a>
+                        <a href="#about">about</a>
                         {/* <a className={styles.about}>about</a> */}
                         <div className={styles.indicator}></div>
                     </div>
@@ -82,7 +82,7 @@ export default function Header() {
                
                 <MagneticWrapper>                         
                     <div className={styles.anch}>
-                        <a>work</a>
+                        <a href="#work">work</a>
                         <div className={styles.indicator}></div>
                 
                     </div>
@@ -90,14 +90,14 @@ export default function Header() {
 
                 <MagneticWrapper>  
                     <div className={styles.anch}>
-                        <a>hobbies</a>
+                        <a href="#hobbies">hobbies</a>
                         <div className={styles.indicator}></div>
                     </div>
                 </MagneticWrapper>  
                 
                 <MagneticWrapper> 
                     <div className={styles.anch}>
-                        <a>contact</a>
+                        <a href="#contact">contact</a>
                         <div className={styles.indicator}></div>
                     </div>
                 </MagneticWrapper> 

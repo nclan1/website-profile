@@ -12,7 +12,6 @@ import Index from "./components/Preloader";
 import Header from "./components/Header/Header";
 import Landing from "./components/Landing/Landing";
 import Profile from "@/object/Profile/Profile";
-import MagneticWrapper from "@/object/Magnetic/MagneticWrapper";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Activity1 from "./components/Activity1/Activity1";
@@ -23,6 +22,7 @@ import Footer from "./components/Footer/Footer";
 export default function Home() {
 
   const [isLoading, setIsLoading] = useState(true);
+
 
   useEffect(() => {
     const lenis = new Lenis({
@@ -96,7 +96,7 @@ export default function Home() {
       <AnimatePresence mode="wait">
         {isLoading && <Index />}
       </AnimatePresence>
-      <Header className="z-100"/>
+      <Header className="z-100" />
       <Landing />
       <Profile />
       <About />
@@ -106,7 +106,7 @@ export default function Home() {
 
       {/* // -----------------------notCoding component========================= */}
 
-      <div className="overflow-hidden">
+      <div className="overflow-hidden" id="hobbies">
         <div className="h-[15vh]"/>
         <Slide src={Picture1} direction={"left"} left={"-40%"} progress={scrollYProgress}/>
         <Slide src={Picture2} direction= {"right"} left={"-55%"} progress={scrollYProgress}/>
@@ -123,7 +123,7 @@ export default function Home() {
       <Activity2 />
       <Photography />
       <Footer />
-
+      <div id="contact"/>
     </main>
     
     

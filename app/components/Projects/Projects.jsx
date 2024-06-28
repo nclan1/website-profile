@@ -43,7 +43,7 @@ export default function Projects() {
     // }, []);
 
     return (
-            <div className={styles.bigCont}>
+            <div className={styles.bigCont} id='work'>
                 <div className={styles.container}>
                     <div className={styles.col1}>
                         <div className='flex flex-col gap-0'>
