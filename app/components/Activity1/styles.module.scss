@@ -3,7 +3,8 @@
 
     display: flex;
     flex-direction: row;
-    margin-bottom: 10rem;
+    // margin-bottom:50vh;
+    margin-top: 10vh;
 
     .images {
         width: 60%;
@@ -28,7 +29,7 @@
 
             &:nth-of-type(2) {
                 left: 60px;
-                bottom: -200px;
+                bottom: -100px;
                 height: 40vh;
                 width: 30vh;
                 z-index: 2;
@@ -51,11 +52,9 @@
         align-items: center;
         justify-content: center;
         font-size: 96px;
-        margin: 0 5rem;
+        margin: 14vh 5rem;
         
-        .body{
-            
-        }
+
 
 
         p {

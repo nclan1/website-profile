@@ -34,13 +34,13 @@ export default function Photography() {
         offset: ["start end", "start start"]
     })
 
-    const scale2 = useTransform(scrollYProgress, [0, 1], [1, 3.5])
+    const scale2 = useTransform(scrollYProgress, [0, 1], [1, 3])
     const scale5 = useTransform(scrollYProgress, [0, 1], [1, 5])
     const scale6 = useTransform(scrollYProgress, [0, 1], [1, 6])
     const scale8 = useTransform(scrollYProgress, [0, 1], [1, 8])
     const scale9 = useTransform(scrollYProgress, [0, 1], [1, 9])
     const height = useTransform(scrollYProgress2, [0, 0.9], [15, 0])
-    const height2 = useTransform(scrollYProgress3, [0, 0.9], [40, 0])
+    const height2 = useTransform(scrollYProgress3, [0, 0.9], [40, 10])
 
     const pictures = [
         {
