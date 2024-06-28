@@ -77,7 +77,7 @@ export default function Projects() {
                     <div className={styles.col2} ref={col2Ref}>
 
                         <p> always looking for opportunities to create/solve/improve. love to collaborate (with you!)</p>
-                        <motion.div style={{x: translateX}}>
+                        <motion.div>
 
                             <a href="https://www.youtube.com/watch?v=KxGRhd_iWuE" target="_blank">
                                 <MagneticWrapper>
