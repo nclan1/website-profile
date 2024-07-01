@@ -32,12 +32,11 @@ export const opacity = {
 export const slideUpLetter = {
     initial: {
         y: "100%",
-        delay: 5
     },
 
     open: (i) => ({
         y: "0%",
-        transition: {duration: 1.4, delay: 0.02 * i, ease: [0.76, 0, 0.24, 1]}
+        transition: {duration: 1.4, delay: 0.1 * i, ease: [0.76, 0, 0.24, 1]}
     }),
 
 

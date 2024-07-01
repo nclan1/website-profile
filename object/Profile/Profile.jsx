@@ -43,8 +43,8 @@ export default function Profile(){
                     <h1>
                         {
                             uni.split(" ").map((word, i) => {
-                                return <span key={i} className={styles.mask}>
-                                    <motion.span variants={slideUpLetter} custom={i} initial='initial' animate="open">
+                                return <span key={i} className={styles.mask} >
+                                    <motion.span variants={slideUpLetter} custom={i} initial='initial' animate="open" exit='exit' >
                                         {word==="uni" ? <a>{word}</a> : word}
                                     </motion.span>
                                 </span>

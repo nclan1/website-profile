@@ -23,7 +23,7 @@
 
         .mask {
             position: relative;
-            display: inline-block;
+            display: inline-flex;
             overflow: hidden;
         }
         
@@ -41,7 +41,7 @@
             font-size: 20px;
             opacity: 0.56;
             font-weight: 600;
-            margin-top: -20px;
+            margin-top: -3vh;
         }
     }
     
