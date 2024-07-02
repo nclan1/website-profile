@@ -18,6 +18,7 @@ import Activity1 from "./components/Activity1/Activity1";
 import Activity2 from "./components/Activity2/Activity2";
 import Photography from "./components/Photography/Photography";
 import Footer from "./components/Footer/Footer";
+import BackgroundCircle from "@/object/BackgroundCircle/BackgroundCircle";
 
 export default function Home() {
 
@@ -99,6 +100,7 @@ export default function Home() {
       <Header className="z-100" />
       <Landing />
       <Profile />
+      <BackgroundCircle />
       <About />
       <Projects className="z-50"/>
       {/* <NotCoding /> */}
