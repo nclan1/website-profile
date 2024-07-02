@@ -100,7 +100,7 @@ export default function Home() {
       <Header className="z-100" />
       <Landing />
       <Profile />
-      <BackgroundCircle />
+      {/* <BackgroundCircle /> */}
       <About />
       <Projects className="z-50"/>
       {/* <NotCoding /> */}
