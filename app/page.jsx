@@ -93,9 +93,9 @@ export default function Home() {
 
   return (
     <main>
-      {/* <AnimatePresence mode="wait">
+      <AnimatePresence mode="wait">
         {isLoading && <Index />}
-      </AnimatePresence> */}
+      </AnimatePresence>
       <Header className="z-100" />
       <Landing />
       <Profile />

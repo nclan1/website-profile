@@ -36,7 +36,7 @@ export const slideUpLetter = {
 
     open: (i) => ({
         y: "0%",
-        transition: {duration: 1.4, delay: 0.1 * i, ease: [0.76, 0, 0.24, 1]}
+        transition: {duration: 1.4, delay: 0.1 * i + 1.8, ease: [0.76, 0, 0.24, 1]}
     }),
 
 
