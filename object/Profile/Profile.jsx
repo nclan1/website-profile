@@ -56,10 +56,10 @@ export default function Profile(){
                 </div>
             </motion.h1>
 
-            <div className={styles.circleContainer}>
+            {/* <div className={styles.circleContainer}>
                 <div className={styles.bgCircle}></div>
                 <div className={styles.bgCircle2}></div>
-            </div>
+            </div> */}
 
             
         </div>
