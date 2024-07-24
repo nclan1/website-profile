@@ -99,7 +99,7 @@ export default function About() {
 
             <div className={styles.moreAbout} ref={container3}>
                 {/* <motion.div className={styles.circle} style={{x: translateX}}></motion.div> */}
-                <motion.div style={{x: translateX}} >
+                <motion.div style={{x: translateX}} onClick={() => window.open('https://www.linkedin.com/in/cnnolan/', '_blank')}>
                     <MagneticWrapper>
                         <div>
                             <Rounded className={styles.circle}>

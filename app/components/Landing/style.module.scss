@@ -29,16 +29,16 @@
     height: 22vh;
     animation: all 1.1s cubic-bezier(0.76, 0, 0.24, 1);
     overflow: hidden;
-    animation-delay: 2.5s;
+    // animation-delay: 2.5s;
 
-    @keyframes all {
-        from {
-            transform: translateY(100%);
-        }
-        to {
-            transform: translateY(0);
-        }
-    }
+    // @keyframes all {
+    //     from {
+    //         transform: translateY(100%);
+    //     }
+    //     to {
+    //         transform: translateY(0);
+    //     }
+    // }
 }
 
 .line {
