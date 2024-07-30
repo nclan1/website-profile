@@ -22,7 +22,7 @@ export const projects = [
         title: "this site!",
         description: "my very own personal website! built with next.js, framer-motion, tailwindcss, gsap, a bunch of other cool stuff.",
         link: "https://github.com/nclan1/website-profile",
-        github: "please don't steal my code!"
+        github: "this is the last one!"
     },
 ]
 
