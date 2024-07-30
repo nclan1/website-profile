@@ -12,7 +12,7 @@ export default function About() {
 
     const title = "who?";
     const description1 = "my name is chanrithya ngim but you can call me nolan! i'm an incoming 3rd year cs student and i enjoy a nice cup of iced coffee (sweetened condensed milk please)."
-    const description2 = "i do a little coding some time. i enjoy front end work but i aspire to be a full-stack dev (even if some don't believe in fullstack...)"
+    const description2 = "i do a little coding sometimes. i enjoy front end work but i aspire to be a full-stack dev (even if some don't believe in fullstack...)"
 
     const container = useRef(null);
     const container2 = useRef(null);
