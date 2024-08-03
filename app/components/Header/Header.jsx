@@ -14,7 +14,7 @@ import Lenis from "lenis";
 import styles from './style.module.scss'
 
 
-export default function Header() {
+export default function Header({ isLoading }) {
 
 
     
@@ -28,6 +28,12 @@ export default function Header() {
         if(isActive) setIsActive(false);
     }, [pathname])
 
+    useEffect(() => {
+        const headerElement = document.querySelector(`.${styles.header}`);
+        if (!isLoading && headerElement) {
+            headerElement.classList.add(styles.animateHeader);
+        }
+    }, [isLoading]);
 
 
     useLayoutEffect(() => {
@@ -60,7 +66,7 @@ export default function Header() {
             transition: 'all 0.87s ease'
         }}></div>
 
-        <div className={styles.header}>
+        <div className={`${styles.header} ${!isLoading ? styles.animateHeader : ''}`}>
 
             <MagneticWrapper>
                 <div className={styles.logo}>
