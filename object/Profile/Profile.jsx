@@ -7,7 +7,7 @@ import { useRef } from "react";
 import { slideUp, opacity, slideUpLetter } from "./anim";
 import { useScroll, useTransform, motion } from "framer-motion";
 
-export default function Profile(){
+export default function Profile({ isLoading }) {
 
     const container = useRef(null);
     const {scrollYProgress} = useScroll({
@@ -44,7 +44,13 @@ export default function Profile(){
                         {
                             uni.split(" ").map((word, i) => {
                                 return <span key={i} className={styles.mask} >
-                                    <motion.span variants={slideUpLetter} custom={i} initial='initial' animate="open" exit='exit' >
+                                    <motion.span 
+                                        variants={slideUpLetter} 
+                                        custom={i} 
+                                        initial='initial' 
+                                        animate={isLoading ? 'initial' : 'open'}
+                                        exit='exit' 
+                                    >
                                         {word==="uni" ? <a>{word}</a> : word}
                                     </motion.span>
                                 </span>

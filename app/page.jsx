@@ -99,7 +99,7 @@ export default function Home() {
       </AnimatePresence>
       <Header className="z-100" isLoading={isLoading}/>
       <Landing isLoading={isLoading}/>
-      <Profile />
+      <Profile isLoading={isLoading}/>
       {/* <BackgroundCircle /> */}
       <About />
       <Projects className="z-50"/>
