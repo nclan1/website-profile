@@ -8,10 +8,11 @@ import Image from 'next/image';
 // import profilePic from './Profile.jpg';  
 
 
-export default function Header() {
+export default function Header({ isLoading }) {
     const firstText = useRef(null);
     const secondText = useRef(null);
     const slider = useRef(null);
+    const contRef = useRef(null);
 
     let xPercent = 0;
     
@@ -50,11 +51,21 @@ export default function Header() {
         requestAnimationFrame(animate);
     },[])
 
+
+    useEffect(() => {
+        if (!isLoading) {
+            const contElement = contRef.current;
+            if (contElement) {
+                contElement.classList.add(styles.animateCont);
+            }
+        }
+    })
+
     return (
         <main className={styles.main}>
             <div className={styles.line}></div>
 
-            <div className={styles.cont}>
+            <div ref={contRef} className={styles.cont}>
                 <div className={styles.sliderContainer}>
                     <div ref={slider} className={styles.slider}>
                         <p ref={firstText} className={styles.text}>NOLAN NGIM - NOLAN NGIM -</p>

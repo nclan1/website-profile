@@ -98,7 +98,7 @@ export default function Home() {
         {isLoading && <Index />}
       </AnimatePresence>
       <Header className="z-100" isLoading={isLoading}/>
-      <Landing />
+      <Landing isLoading={isLoading}/>
       <Profile />
       {/* <BackgroundCircle /> */}
       <About />
