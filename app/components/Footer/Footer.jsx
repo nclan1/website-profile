@@ -83,7 +83,7 @@ export default function Footer() {
                     </MagneticWrapper>
                     <MagneticWrapper>
                         <div>
-                            <a href="https://drive.google.com/file/d/12oe76xhrm0rmqaEhRISNM_z8Sjm681gk/view?usp=sharing" target="_blank">
+                            <a href="https://drive.google.com/file/d/1ziixt4UtF_GkDDsX1iM0T5Udsp6cfau2/view?usp=sharing" target="_blank">
                                 <Rounded className={styles.button2}>
                                     <p>resume!</p>
                                 </Rounded>
