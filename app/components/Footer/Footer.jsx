@@ -94,7 +94,7 @@ export default function Footer() {
             </div>
 
             <div className={styles.foot}>
-                <h1>© 2024 <br />nolan</h1>
+                <h1>© 2025 <br />nolan</h1>
                 <p><span>local time: </span><br /> {time} edt</p>
                 <div className={styles.an}>
 
