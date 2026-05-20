@@ -2,8 +2,8 @@ export const CONTENT = {
   name: "nolan ngim",
   fullName: 'chanrithya "nolan" ngim',
   role: "software engineer",
-  location: "boston, ma",
-  email: "ngimcnolan@gmail.com",
+  location: "new hampshire",
+  email: "hello@chanrithya.com",
   resume:
     "https://drive.google.com/file/d/1ziixt4UtF_GkDDsX1iM0T5Udsp6cfau2/view?usp=sharing",
   socials: [
@@ -21,26 +21,26 @@ export const CONTENT = {
     },
   ],
   about: {
-    lead: "i'm nolan. i live in boston, i just graduated from bu, and i'm about to start working as a software engineer.",
+    lead: "i just graduated from bu, and i'm about to start working as a software engineer! (grateful)",
     body: [
-      "i drink iced coffee with sweetened condensed milk. i read more than i probably should — lately leaning russian. i play guitar to keep my hands busy when i'm not at a keyboard, and i carry a camera most places i go.",
-      "this site isn't a pitch. it's a slow page about the things i think about, the books on my desk, the projects i make for myself, and the photos i take on the way home.",
+      "i enjoy slow gongfu tea sessions particularly dancong oolongs. i try to read more than i am — lately focusing on fiction. i play guitar to keep my hands busy when i'm not at a keyboard, and i'm trying to run a half-marathon one day!",
+      "this site isn't a pitch. more of a showcase on the things i like, the books on my desk, the projects i make for myself, and the photos i take on the way home.",
     ],
     facts: [
-      ["based in", "boston, ma"],
+      ["based in", "new hampshire"],
       ["ethnicity", "cambodian-american"],
       ["day job", "software engineer"],
       ["off-screen", "books, guitar, film"],
     ],
   },
   now: [
-    { label: "reading", value: "the brothers karamazov", detail: "dostoevsky" },
+    { label: "reading", value: "myth of sisyphus", detail: "camus" },
     {
       label: "building",
-      value: "syllabi-sync",
-      detail: "a tool for students drowning in pdfs",
+      value: "frag-aggraa",
+      detail: "after-market reddit-sourced fragrances platform",
     },
-    { label: "learning", value: "rust + systems", detail: "cs455 + curiosity" },
+    { label: "learning", value: "c++", detail: "for job + foundation" },
     {
       label: "listening",
       value: "mostly jazz right now",

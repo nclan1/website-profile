@@ -26,7 +26,14 @@ export function Hero() {
         }}
       />
 
-      <div style={{ ...brutalStyles.inner, padding: "40px 32px 0" }}>
+      <div
+        style={{
+          ...brutalStyles.inner,
+          padding: "40px 32px 0",
+          position: "relative",
+          zIndex: 1,
+        }}
+      >
         {/* run label */}
         <div
           style={{
@@ -113,8 +120,8 @@ export function Hero() {
                     marginBottom: 20,
                   }}
                 >
-                  boston-based. graduated from boston u. i write software for a
-                  living. this page is a little about me {">"}:)
+                  new hampshire-based. graduated from boston u. will write
+                  software for a living. this page is a little about me {">"}:-)
                 </p>
               </Reveal>
               <Reveal delay={0.15}>
@@ -222,29 +229,6 @@ export function Hero() {
               <div
                 style={{
                   position: "absolute",
-                  bottom: 16,
-                  left: -14,
-                  ...brutalStyles.mono,
-                  ...brutalStyles.hardBox,
-                  padding: "12px 16px",
-                  background: brutalTheme.accent,
-                  color: brutalTheme.bg,
-                  transform: "rotate(-2deg)",
-                  boxShadow: `4px 4px 0 ${brutalTheme.ink}`,
-                }}
-              >
-                <div style={{ fontSize: 9, opacity: 0.85, marginBottom: 2 }}>
-                  {/*TODO, MAKE THIS PULSATE THROUGH OPACITY*/}
-                  currently reading...
-                </div>
-                {/*TODO: CONNECT THIS WITH AN EASY WAY FOR ME TO UPDATE WHAT IM READING.*/}
-                <div>Orbital - Samantha Harvey</div>
-              </div>
-            </Reveal>
-            <Reveal delay={0.32}>
-              <div
-                style={{
-                  position: "absolute",
                   top: 24,
                   right: -16,
                   ...brutalStyles.mono,
@@ -263,7 +247,30 @@ export function Hero() {
                 >
                   fueled by
                 </div>
-                <div>iced coffee + condensed milk</div>
+                <div>robusta + condensed milk</div>
+              </div>
+            </Reveal>
+            <Reveal delay={0.32}>
+              <div
+                style={{
+                  position: "absolute",
+                  bottom: 16,
+                  left: -14,
+                  ...brutalStyles.mono,
+                  ...brutalStyles.hardBox,
+                  padding: "12px 16px",
+                  background: brutalTheme.accent,
+                  color: brutalTheme.bg,
+                  transform: "rotate(-2deg)",
+                  boxShadow: `4px 4px 0 ${brutalTheme.ink}`,
+                }}
+              >
+                <div style={{ fontSize: 9, opacity: 0.85, marginBottom: 2 }}>
+                  {/*TODO, MAKE THIS PULSATE THROUGH OPACITY*/}
+                  currently reading...
+                </div>
+                {/*TODO: CONNECT THIS WITH AN EASY WAY FOR ME TO UPDATE WHAT IM READING.*/}
+                <div>Orbital - Samantha Harvey</div>
               </div>
             </Reveal>
           </div>
@@ -295,9 +302,8 @@ export function Hero() {
             .fill(0)
             .map((_, i) => (
               <span key={i} style={{ marginRight: 48 }}>
-                ✦ chanrithya nolan ngim &nbsp;&nbsp; ✦ boston, ma &nbsp;&nbsp; ✦
-                books · guitar · film &nbsp;&nbsp; ✦ iced coffee + condensed
-                milk &nbsp;&nbsp;
+                ✦ new hampshire &nbsp;&nbsp; ✦ books · running · tea · gym
+                &nbsp;&nbsp; ✦ software engineer &nbsp;&nbsp;
               </span>
             ))}
         </div>

@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, JetBrains_Mono, Instrument_Serif } from "next/font/google";
+import {
+  Space_Grotesk,
+  JetBrains_Mono,
+  Instrument_Serif,
+} from "next/font/google";
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -21,7 +25,7 @@ const instrumentSerif = Instrument_Serif({
 
 export const metadata: Metadata = {
   title: "nolan ngim — portfolio",
-  description: "boston-based software engineer",
+  description: "new hampshire-based software engineer",
 };
 
 export default function RootLayout({
@@ -33,7 +37,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${spaceGrotesk.variable} ${jetBrainsMono.variable} ${instrumentSerif.variable} h-full antialiased`}
-      style={{ scrollBehavior: 'smooth' }}
+      style={{ scrollBehavior: "smooth" }}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
